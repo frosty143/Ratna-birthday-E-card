@@ -1,6 +1,5 @@
 # Ratna-birthday-E-card
 BEST WISHESH AND LOTS OF LOVE &lt;3
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,9 @@ BEST WISHESH AND LOTS OF LOVE &lt;3
     <title>Happy Birthday!</title>
     <style>
         body {
-            background-color: #ffebcd;
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: #fff;
             font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 50px;
@@ -21,7 +22,7 @@ BEST WISHESH AND LOTS OF LOVE &lt;3
         }
         p {
             font-size: 20px;
-            color: #333;
+            color: #fff;
         }
         .balloon {
             width: 50px;
@@ -58,6 +59,11 @@ BEST WISHESH AND LOTS OF LOVE &lt;3
     <h1>Happy Birthday, Ratna!</h1>
     <p>Wishing you, Ratna, a day filled with love, joy, and all your favorite things!</p>
     <p>May this year bring you closer to your dreams!</p>
+    <img src="cake.jpg" alt="Birthday Cake" style="width: 200px;">
+    <audio controls autoplay>
+        <source src="happy_birthday.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <div id="balloons"></div>
     <button onclick="addBalloon()">Add a Balloon!</button>
     <p>From Frosty</p>
@@ -71,4 +77,3 @@ BEST WISHESH AND LOTS OF LOVE &lt;3
     </script>
 </body>
 </html>
-```
