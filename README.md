@@ -1,175 +1,74 @@
 # Ratna-birthday-E-card
 BEST WISHESH AND LOTS OF LOVE &lt;3
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Ratna!</title>
+    <title>Happy Birthday!</title>
     <style>
         body {
-            background-color: #000; /* Black background */
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        /* Outer box with border */
-        .card-box {
-            border: 5px dashed #ff6b81; /* Pink dashed border */
-            border-radius: 20px;
-            padding: 20px;
-            background: linear-gradient(145deg, #333, #111); /* Subtle gradient */
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
-            max-width: 600px;
-            width: 90%;
+            background-color: #ffebcd;
+            font-family: 'Arial', sans-serif;
             text-align: center;
-            animation: pop-in 1s ease-out;
+            padding: 50px;
+            animation: fadeIn 2s;
         }
-
-        /* Inner card */
-        .card {
-            background: #000; /* Black card background */
-            border: 2px solid #ff6b81; /* Pink border */
-            border-radius: 15px;
-            padding: 30px 20px;
-            color: #fff;
-            box-shadow: 0 5px 15px rgba(255, 107, 129, 0.5);
-            position: relative;
-        }
-
         h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #ff6b81;
-            margin-bottom: 10px;
-            text-shadow: 3px 3px 10px rgba(255, 107, 129, 0.8);
+            color: #ff4500;
+            font-size: 50px;
         }
-
         p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #e3f2fd; /* Light blue */
+            font-size: 20px;
+            color: #333;
         }
-
-        .highlight {
-            color: #f9a825; /* Golden yellow */
-            font-weight: bold;
+        .balloon {
+            width: 50px;
+            height: 80px;
+            background-color: #ff69b4;
+            border-radius: 25px;
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+            animation: float 3s infinite;
         }
-
-        /* Cake image */
-        .cake {
-            width: 200px;
-            height: auto;
-            margin: 20px 0;
-            animation: bounce 2s infinite;
-        }
-
-        /* Floating balloons animation */
-        .balloons {
+        .balloon:after {
+            content: '';
+            width: 5px;
+            height: 50px;
+            background-color: #000;
             position: absolute;
-            top: 0;
+            bottom: -50px;
             left: 50%;
             transform: translateX(-50%);
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
         }
-
-        .balloons img {
-            position: absolute;
-            animation: float 4s infinite ease-in-out;
-            opacity: 0.8;
-        }
-
-        .balloon1 {
-            top: 100%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .balloon2 {
-            top: 100%;
-            left: 50%;
-            animation-delay: 1s;
-        }
-
-        .balloon3 {
-            top: 100%;
-            left: 80%;
-            animation-delay: 2s;
-        }
-
-        /* Animations */
         @keyframes float {
-            0% {
-                transform: translateY(0) scale(1);
-            }
-            50% {
-                transform: translateY(-50px) scale(1.05);
-            }
-            100% {
-                transform: translateY(-100vh) scale(0.9);
-            }
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
         }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        @keyframes pop-in {
-            0% {
-                transform: scale(0.5);
-                opacity: 0;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        footer {
-            margin-top: 20px;
-            font-size: 1.2rem;
-            color: #ff6b81;
-            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <!-- Outer Box -->
-    <div class="card-box">
-        <!-- Balloons in the background -->
-        <div class="balloons">
-            <img src="https://i.imgur.com/Z4Ry4Ve.png" alt="Balloon 1" class="balloon1" width="100">
-            <img src="https://i.imgur.com/Z4Ry4Ve.png" alt="Balloon 2" class="balloon2" width="120">
-            <img src="https://i.imgur.com/Z4Ry4Ve.png" alt="Balloon 3" class="balloon3" width="90">
-        </div>
+    <h1>Happy Birthday, Ratna!</h1>
+    <p>Wishing you, Ratna, a day filled with love, joy, and all your favorite things!</p>
+    <p>May this year bring you closer to your dreams!</p>
+    <div id="balloons"></div>
+    <button onclick="addBalloon()">Add a Balloon!</button>
+    <p>From Frosty</p>
 
-        <!-- Birthday Card -->
-        <div class="card">
-            <h1>Happy Birthday Ratna!</h1>
-            <img src="https://i.imgur.com/ZrIptAA.png" alt="Birthday Cake" class="cake">
-            <p>
-                Dear Ratna, on your <span class="highlight">22nd birthday</span>, I just want you to know how much you mean to me. 
-                You’re the <span class="highlight">coder</span> who fills my life with endless joy, the <span class="highlight">algorithm</span> that keeps my heart running, 
-                and the bug-fixer of all my worries. May your dreams compile flawlessly and your happiness never encounter an error. ❤️
-            </p>
-            <footer>With love, Frosty 💖</footer>
-        </div>
-    </div>
+    <script>
+        function addBalloon() {
+            const balloon = document.createElement('div');
+            balloon.className = 'balloon';
+            document.getElementById('balloons').appendChild(balloon);
+        }
+    </script>
 </body>
 </html>
-
-
+```
