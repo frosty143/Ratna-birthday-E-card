@@ -8,11 +8,13 @@ BEST WISHESH AND LOTS OF LOVE &lt;3
     <title>Happy Birthday Ratna!</title>
     <style>
         body {
-            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient Background */
+            background: url('https://www.transparenttextures.com/patterns/balloons.png'); /* Balloon Background */
+            background-size: cover;
             font-family: 'Arial', sans-serif;
             color: #fff;
             text-align: center;
             padding: 50px;
+            background-color: #fbe5d6; /* Light pastel background color */
         }
 
         h1 {
@@ -20,8 +22,8 @@ BEST WISHESH AND LOTS OF LOVE &lt;3
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #fff;
-            background: rgba(0, 0, 0, 0.3);
+            color: #ffb6b6; /* Pastel pink */
+            background: rgba(255, 255, 255, 0.7);
             display: inline-block;
             padding: 20px;
             border-radius: 10px;
@@ -32,29 +34,30 @@ BEST WISHESH AND LOTS OF LOVE &lt;3
             font-size: 22px;
             line-height: 1.6;
             margin-top: 20px;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.8);
             display: inline-block;
             padding: 15px;
             border-radius: 8px;
             max-width: 600px;
             margin: 30px auto;
+            color: #fce3d8; /* Light pastel yellow */
         }
 
         .highlight {
-            color: #ffeb3b; /* Highlight color for special words */
+            color: #ffeb3b; /* Highlight color in bright yellow */
             font-weight: bold;
         }
 
         .footer {
             margin-top: 40px;
             font-size: 18px;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(255, 255, 255, 0.7);
             padding: 10px;
             border-radius: 5px;
         }
 
         .button {
-            background-color: #ff7e5f;
+            background-color: #ffb6b6; /* Pastel pink */
             color: #fff;
             padding: 12px 30px;
             border-radius: 30px;
@@ -67,7 +70,7 @@ BEST WISHESH AND LOTS OF LOVE &lt;3
         }
 
         .button:hover {
-            background-color: #feb47b;
+            background-color: #fce3d8; /* Light pastel yellow */
         }
     </style>
 </head>
@@ -90,3 +93,4 @@ BEST WISHESH AND LOTS OF LOVE &lt;3
 
 </body>
 </html>
+
